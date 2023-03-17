@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper ">
+        <!--header-->
+        <div class="header">
+            <h1> DevDetective</h1>
+             <span id="theme-selector">
+                <p theme id="thm"></p>
+                <img theme-img>
+             </span>
+        </div>
+
+        <!--form container-->
+        <div class="input-fileld">
+            <form action="" data-formContainer>
+                <img src="./assets/images/search-icon.svg" id="search">
+                <input placeholder="Enter a Github user name..." data-searchUser>
+                <button type="submit" data-submit-btn>Search</button>
+            </form>
+        </div>
+
+        <!--User Info container-->
+          <div class="user-infoConatiner">
+
+           <!--left part for image-->
+           <div class="user-img">
+              <img user-image>
+           </div>
+
+           <!--right part-->
+              <div class="user-data">
+                     <!--user basic info-->
+                     <div class="user-basicInfo">
+                        <!-- user name ,name -->
+                          <div class="userr">
+                              <h2 id="name" class="bg"></h2>
+                              <p id="user-name" class="bg"></p>
+                          </div>
+                          <!--joining date of user-->
+                          <div>
+                              <p id="jd">Joined <span joinDate  id="Date"></span></p>
+                          </div>
+                     </div>
+
+                     <!--Div for user bio-->
+                     <div class="user-bio">
+                          <p user-bioData ></p>
+                     </div>
+
+                     <!--user staticis-->
+                     <div class="user-stats">
+                           <div class="stats-data">
+                               <p>Repos</p>
+                               <p repo-data></p>
+                           </div>
+
+                            <div class="stats-data">
+                               <p>Followers</p>
+                               <p Followers-data></p>
+                           </div>
+
+                            <div class="stats-data">
+                               <p>Following</p>
+                               <p Following-data></p>
+                           </div>
+                     </div>
+
+                     <!--social container-->
+                     <div class="social-container bg">
+                        <!--1 st data-->
+                        <div class="first-data">
+                           <div class="social-info">
+                            <img src="./assets/images/location-icon.svg"  >
+                            <p location-data ></p>
+                          </div>
+
+                          <div class="social-info">
+                            <img src="./assets/images/website-icon.svg"  >
+                            <p wesite-link ></p>
+                          </div>
+                        </div>
+                         <!--2nd data-->
+                        <div class="second-data">
+                         <div class="social-info">
+                            <img src="./assets/images/twitter-icon.svg" >
+                            <p twitter-link ></p>
+                          </div>
+
+                          <div class="social-info">
+                            <img src="./assets/images/company-icon.svg" >
+                            <p company-data p>
+                          </div>
+                        </div>
+                         
+                     </div>
+              </div>
+          </div>
+    </div>
+
+    <script
+    src="index.js"></script>
+</body>
+</html>
